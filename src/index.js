@@ -6,11 +6,13 @@ function searchCity(){
     const locationInput = document.querySelector("#location");
     const submitBtn = document.querySelector("#submitbtn");
 
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
         e.preventDefault();
+
+        const weatherData = await data(locationInput.value);
+        display(weatherData);
     })
 
-    submitBtn.addEventListener("click", () => {
-        
-    })
 }
+
+searchCity()
