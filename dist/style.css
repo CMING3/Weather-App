@@ -10,7 +10,7 @@ ul,li{
 }
 
 body{
-    background-image: url(/dist/images/941898.jpg);
+    background-image: url(./dist/images/941898.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
